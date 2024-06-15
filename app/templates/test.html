@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>気象概況</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fonts/WX0C0001.css" />
+    <style>
+        @font-face {
+            font-family: "japanese";
+            src: url(fonts/GenShinGothic-Monospace-Medium.ttf);
+        }
+
+        body {
+            font-family: "japanese"
+        }
+    </style>
+</head>
+
+<body>
+    <h1>天気概況</h1>
+    <h2>現在天気</h2>
+    <table border="1" class=table>
+        <tr>
+            <th>現在天気</th>
+            <td>雨</td>
+        </tr>
+        <tr>
+            <th>アイコン</th>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+        </tr>
+        <tr>
+            <th>風向</th>
+            <td>北西</td>
+        </tr>
+        <tr>
+            <th>風速</th>
+            <td class=tdWindA>1.2m/s</td>
+        </tr>
+        <tr>
+            <th>ガスト</th>
+            <td class=tdWindB>4.9m/s</td>
+        </tr>
+        <tr>
+            <th>1h雨量</th>
+            <td>2.73mm</td>
+        </tr>
+        <tr>
+            <th>視程</th>
+            <td>6278m</td>
+        </tr>
+        <tr>
+            <th>雲底高度</th>
+            <td>296m</td>
+        </tr>
+        <tr>
+            <th>気温</th>
+            <td>17℃</td>
+        </tr>
+        <tr>
+            <th>湿度</th>
+            <td>86％</td>
+        </tr>
+        <tr>
+            <th>地上気圧</th>
+            <td>1002hPa</td>
+        </tr>
+        <tr>
+            <th>日没時間</th>
+            <td>18:54</td>
+        </tr>
+    </table>
+    <div class="image-container"><img
+            src="https://www.data.jma.go.jp/fcd/yoho/data/wxchart/quick/202406/SPAS_COLOR_202406020300.png" alt="NULL">
+    </div>
+    <p class="time">出典：openWeather,気象庁 02日 16:29時点 Kuzuwada</p>
+    <p> </p>
+    <p> </p>
+    <h2>予報天気</h2>
+    <table border="1">
+        <tr>
+            <th>予報時刻</th>
+            <td>02日 18:00</td>
+            <td>02日 21:00</td>
+            <td>03日 00:00</td>
+            <td>03日 03:00</td>
+            <td>03日 06:00</td>
+            <td>03日 09:00</td>
+            <td>03日 12:00</td>
+            <td>03日 15:00</td>
+            <td>03日 18:00</td>
+        </tr>
+        <tr>
+            <th>天気</th>
+            <td>雨</td>
+            <td>小雨</td>
+            <td>曇（OVC）</td>
+            <td>曇（OVC）</td>
+            <td>曇（OVC）</td>
+            <td>小雨</td>
+            <td>小雨</td>
+            <td>小雨</td>
+            <td>小雨</td>
+        </tr>
+        <tr>
+            <th>アイコン</th>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/04d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/04d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/04d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+            <td class=tdIcon><img src="./fonts/wx_png/10d.png" alt="NULL"></td>
+        </tr>
+        <tr>
+            <th>風向</th>
+            <td>北</td>
+            <td>北東</td>
+            <td>北西</td>
+            <td>北</td>
+            <td>北西</td>
+            <td>北</td>
+            <td>東</td>
+            <td>東</td>
+            <td>東</td>
+        </tr>
+        <tr>
+            <th>風速</th>
+            <td class=tdWindA>1.5m/s</td>
+            <td class=tdWindA>1.4m/s</td>
+            <td class=tdWindA>1.0m/s</td>
+            <td class=tdWindA>1.0m/s</td>
+            <td class=tdWindA>1.1m/s</td>
+            <td class=tdWindA>0.7m/s</td>
+            <td class=tdWindA>2.0m/s</td>
+            <td class=tdWindA>3.3m/s</td>
+            <td class=tdWindA>2.9m/s</td>
+        </tr>
+        <tr>
+            <th>ガスト</th>
+            <td class=tdWindA>3.3m/s</td>
+            <td class=tdWindA>3.4m/s</td>
+            <td class=tdWindA>2.0m/s</td>
+            <td class=tdWindA>1.7m/s</td>
+            <td class=tdWindA>2.0m/s</td>
+            <td class=tdWindA>1.6m/s</td>
+            <td class=tdWindA>2.3m/s</td>
+            <td class=tdWindA>3.0m/s</td>
+            <td class=tdWindB>4.3m/s</td>
+        </tr>
+        <tr>
+            <th>3h雨量</th>
+            <td>11.26mm</td>
+            <td>0.98mm</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0.2mm</td>
+            <td>0.17mm</td>
+            <td>0.47mm</td>
+            <td>1.3mm</td>
+        </tr>
+        <tr>
+            <th>視程</th>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+            <td>10km以上</td>
+        </tr>
+        <tr>
+            <th>雲底高度</th>
+            <td>315m</td>
+            <td>275m</td>
+            <td>230m</td>
+            <td>185m</td>
+            <td>338m</td>
+            <td>845m</td>
+            <td>1455m</td>
+            <td>1457m</td>
+            <td>951m</td>
+        </tr>
+        <tr>
+            <th>気温</th>
+            <td>17℃</td>
+            <td>17℃</td>
+            <td>17℃</td>
+            <td>16℃</td>
+            <td>17℃</td>
+            <td>20℃</td>
+            <td>24℃</td>
+            <td>24℃</td>
+            <td>21℃</td>
+        </tr>
+        <tr>
+            <th>湿度</th>
+            <td>85％</td>
+            <td>87％</td>
+            <td>89％</td>
+            <td>91％</td>
+            <td>84％</td>
+            <td>65％</td>
+            <td>48％</td>
+            <td>48％</td>
+            <td>62％</td>
+        </tr>
+        <tr>
+            <th>気圧</th>
+            <td>1003hPa</td>
+            <td>1005hPa</td>
+            <td>1004hPa</td>
+            <td>1003hPa</td>
+            <td>1004hPa</td>
+            <td>1004hPa</td>
+            <td>1002hPa</td>
+            <td>1002hPa</td>
+            <td>1003hPa</td>
+        </tr>
+    </table>
+    <p>&copy; 法政大学令和元年卒 谷口 雄一 ※※無断転用禁止※※</p>
+</body>
+
+</html>

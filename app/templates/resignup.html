@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>ユーザー認証</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}" />
+    <style>
+        @font-face {
+            font-family: "japanese";
+            src: url("{{ url_for('static', filename='fonts/GenShinGothic-Monospace-Medium.ttf') }}");
+        }
+
+        body {
+            font-family: "japanese"
+        }
+    </style>
+</head>
+
+<body>
+    <h1>天気概況</h1>
+    <p class="red">{{ msg }}</p>
+    <form action="{{ url_for('home') }}" method="POST">
+        <div>
+            <label for="last_name">ユーザーＩＤ: </label>
+            <input type="text" name="user_name">
+        </div>
+        <div>
+            <label for="password">パスワード: </label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input type="submit" value="送信">
+        </div>
+    </form>
+</body>
+
+</html>
